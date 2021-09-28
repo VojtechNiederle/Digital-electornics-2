@@ -75,4 +75,66 @@ int main(void)
 2. Scheme of Morse code application, i.e. connection of AVR device, LED, resistor, and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
 
    ![your figure](https://github.com/VojtechNiederle/Digital-electronics-2/blob/main/labs/01-tools/Schem.jpg)
+   
+### Experiments your own
+```c
+    while (1) 
+    {
+		// DE2: -.. . ..---
+        PORTB = PORTB ^ (1<<LED_GREEN); //D
+		_delay_ms(DASH_DELAY);         
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		
+		_delay_ms(DOT_DELAY);
+		           
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		_delay_ms(DOT_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		
+		_delay_ms(DOT_DELAY);
+
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		_delay_ms(DOT_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN);//
+		
+		_delay_ms(DASH_DELAY);
+		
+		PORTB = PORTB ^ (1<<LED_GREEN);//E
+		_delay_ms(DOT_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN);//
+				
+		_delay_ms(DASH_DELAY);
+		
+		PORTB = PORTB ^ (1<<LED_GREEN);//2
+		_delay_ms(DOT_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		        
+		_delay_ms(DOT_DELAY);
+				
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		_delay_ms(DOT_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		
+		_delay_ms(DOT_DELAY);
+		
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		_delay_ms(DASH_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		
+		_delay_ms(DOT_DELAY);
+		
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		_delay_ms(DASH_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		
+		_delay_ms(DOT_DELAY);
+		
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		_delay_ms(DASH_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN);	//	
+		
+		_delay_ms(WORD_PAUSE_DELAY);
+		
+    }
+```
 
