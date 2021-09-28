@@ -78,3 +78,5 @@ global int x
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+*This text is italicized*
+~~This was mistaken text~~	
