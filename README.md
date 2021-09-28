@@ -73,3 +73,8 @@ Reference-style:
 ```c
 global int x
 ```
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
