@@ -8,21 +8,21 @@ Link to your `Digital-electronics-2` GitHub repository:
 ### Blink example
 
 1. What is the meaning of the following binary operators in C?
-   * `|`
-   * `&`
-   * `^`
-   * `~`
-   * `<<`
-   * `>>`
+   * `|` OR
+   * `&` AND
+   * `^` XOR
+   * `~` NOT
+   * `<<` ditshift doleva
+   * `>>` bitshift doprava
 
 2. Complete truth table with operators: `|`, `&`, `^`, `~`
 
 | **b** | **a** |**b or a** | **b and a** | **b xor a** | **not b** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 |  |  |  |  |
-| 0 | 1 |  |  |  |  |
-| 1 | 0 |  |  |  |  |
-| 1 | 1 |  |  |  |  |
+| 0 | 0 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 0 | 1 | 1 |
+| 1 | 0 | 1 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 0 |
 
 
 ### Morse code
@@ -30,6 +30,16 @@ Link to your `Digital-electronics-2` GitHub repository:
 1. Listing of C code with syntax highlighting which repeats one "dot" and one "comma" (BTW, in Morse code it is letter `A`) on a LED:
 
 ```c
+#define LED_GREEN   PB5 // AVR pin where green LED is connected
+#define DOT_DELAY 250
+#define DASH_DELAY 750
+#define WORD_PAUSE_DELAY 1750 // Delay in milliseconds
+
+#ifndef F_CPU           // Preprocessor directive allows for conditional
+                        // compilation. The #ifndef means "if not defined".
+# define F_CPU 16000000 // CPU frequency in Hz required for delay
+#endif                  // The #ifndef directive must be closed by #endif
+
 int main(void)
 {
     // Set pin as output in Data Direction Register
@@ -43,10 +53,17 @@ int main(void)
     // Infinite loop
     while (1)
     {
-        // Pause several milliseconds
-        _delay_ms(SHORT_DELAY);
 
-        // WRITE YOUR CODE HERE
+        PORTB = PORTB ^ (1<<LED_GREEN); //Tečka
+		_delay_ms(DOT_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN); //
+		_delay_ms(DOT_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN); //Čárka
+		_delay_ms(DASH_DELAY);
+		PORTB = PORTB ^ (1<<LED_GREEN); //
+		
+		_delay_ms(WORD_PAUSE_DELAY);
+		
     }
 
     // Will never reach this
