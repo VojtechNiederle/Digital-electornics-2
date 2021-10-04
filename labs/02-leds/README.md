@@ -14,7 +14,6 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 [Modrá LED dioda](https://www.gme.cz/led-5mm-blue-460-60-diff)
 
-![ohms law](Images/ohms_law.png)
 &nbsp;
 
 | **LED color** | **Supply voltage** | **LED current** | **LED voltage** | **Resistor value** |
