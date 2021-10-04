@@ -13,6 +13,14 @@ Link to your `Digital-electronics-2` GitHub repository:
 [Červená LED dioda](https://www.gme.cz/led-5mm-red-2-50-hlmp-4700)
 
 [Modrá LED dioda](https://www.gme.cz/led-5mm-blue-460-60-diff)
+
+![ohms law](Images/ohms_law.png)
+&nbsp;
+
+| **LED color** | **Supply voltage** | **LED current** | **LED voltage** | **Resistor value** |
+| :-: | :-: | :-: | :-: | :-: |
+| red | 5&nbsp;V | 20&nbsp;mA | | |
+| blue | 5&nbsp;V | 20&nbsp;mA | | |
 1. Complete tables according to the AVR manual.
 
 | **DDRB** | **Description** |
