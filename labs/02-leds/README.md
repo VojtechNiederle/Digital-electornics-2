@@ -18,8 +18,8 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 | **LED color** | **Supply voltage** | **LED current** | **LED voltage** | **Resistor value** |
 | :-: | :-: | :-: | :-: | :-: |
-| red | 5&nbsp;V | 20&nbsp;mA | | |
-| blue | 5&nbsp;V | 20&nbsp;mA | | |
+| red | 5&nbsp;V | 2&nbsp;mA | 1.7 | |
+| blue | 5&nbsp;V | 20&nbsp;mA | 3.2 | |
 1. Complete tables according to the AVR manual.
 
 | **DDRB** | **Description** |
