@@ -7,6 +7,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 ### Active-low and active-high LEDs
 ![alt text](Schema.png)
+![alt text](Schema2.png)
 1. Complete tables according to the AVR manual.
 
 | **DDRB** | **Description** |
