@@ -129,8 +129,8 @@ int main(void)
 		{
 			PORTB = PORTB ^ (1<<LED_GREEN);
 		}
-		_delay_ms(BLINK_DELAY);
-		if (((PIND >> BUTTON) & 1) == 0)
+	_delay_ms(BLINK_DELAY);
+	if (((PIND >> BUTTON) & 1) == 0)
 		{
 			PORTB = PORTB ^ (1<<LED_RED);
 		}
