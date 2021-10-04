@@ -8,6 +8,9 @@ Link to your `Digital-electronics-2` GitHub repository:
 ### Active-low and active-high LEDs
 ![alt text](Schema.png)
 ![alt text](Schema2.png)
+ad a) Výpočet led rezistorů
+[Červená LED dioda](https://www.gme.cz/led-5mm-red-2-50-hlmp-4700)
+[Modrá LED dioda](https://www.gme.cz/led-5mm-blue-460-60-diff)
 1. Complete tables according to the AVR manual.
 
 | **DDRB** | **Description** |
