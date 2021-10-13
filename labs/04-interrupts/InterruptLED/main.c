@@ -15,7 +15,7 @@
 #define LED_D2  PB4
 #define LED_D3  PB3
 #define LED_D4  PB2
-
+volatile int i = 2;
 /* Includes ----------------------------------------------------------*/
 #include <avr/io.h>         // AVR device-specific IO definitions
 #include <avr/interrupt.h>  // Interrupts standard C library for AVR-GCC
@@ -33,7 +33,17 @@ int main(void)
 {
     // Configuration of LED(s) at port B
     GPIO_config_output(&DDRB, LED_D1);
-    GPIO_write_low(&PORTB, LED_D1);
+    GPIO_write_high(&PORTB, LED_D1);
+    
+    GPIO_config_output(&DDRB, LED_D2);
+    GPIO_write_high(&PORTB, LED_D2);
+    
+    GPIO_config_output(&DDRB, LED_D3);
+    GPIO_write_high(&PORTB, LED_D3);
+    
+    GPIO_config_output(&DDRB, LED_D4);
+    GPIO_write_high(&PORTB, LED_D4);
+
 
     // Configuration of 16-bit Timer/Counter1 for LED blinking
     // Set the overflow prescaler to 262 ms and enable interrupt
@@ -60,8 +70,8 @@ int main(void)
  * Purpose:  Toggle D1 LED on Multi-function shield.
  **********************************************************************/
 ISR(TIMER1_OVF_vect)
-{
-
-    // WRITE YOUR CODE HERE
+{   
+    i++;        
+    GPIO_toggle(&PORTB, );     
 
 }
