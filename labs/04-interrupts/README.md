@@ -11,13 +11,13 @@ Consider an n-bit number that we increment based on the clock signal. If we reac
 ##### Calculation for 16 MHz, 8 bit, /1 prescaler
 
 &nbsp;
-![Timer overflow](Images/equation_calc_16_8_1.gif)
+![Timer overflow](schem1.png)
 &nbsp;
 
 ##### Calculation for 16 MHz, 16 bit, /1 prescaler
 
 &nbsp;
-![Timer overflow](Images/equation_calc_16_16_1.gif)
+![Timer overflow](schem1.png)
 &nbsp;
 
 ### Overflow times
