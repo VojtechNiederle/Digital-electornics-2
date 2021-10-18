@@ -33,11 +33,11 @@ Consider an n-bit number that we increment based on the clock signal. If we reac
 2. Shields are boards that can be attached to an Arduino board, significantly expand its capabilities, and makes prototyping much faster. See schematic of Multi-function shield and find out the connection of four LEDs (D1, D2, D3, D4) and three push buttons (S1-A1, S2-A2, S3-A3).
 
 &nbsp;
-![Timer overflow](Images/sch_4_leds.png)
+![Timer overflow](schem1.png)
 &nbsp;
 
 &nbsp;
-![Timer overflow](Images/sch_3_btns.png)
+![Timer overflow](schem2.png)
 &nbsp;
 
 ### Timer library
