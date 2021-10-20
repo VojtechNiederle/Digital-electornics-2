@@ -10,6 +10,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 1. In your words, describe the difference between Common Cathode and Common Anode 7-segment display.
    * CC SSD
    * CA SSD
+   * 
    | **Digit** | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **DP** |
    | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
    | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
