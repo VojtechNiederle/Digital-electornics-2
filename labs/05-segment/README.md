@@ -8,8 +8,8 @@ Link to your `Digital-electronics-2` GitHub repository:
 ### 7-segment library
 
 1. In your words, describe the difference between Common Cathode and Common Anode 7-segment display.
-   * CC SSD
-   * CA SSD
+   * CC SSD - Všehcny LED jsou připojeny katodou na společnou zem. Prvky jsou ovládány přivedením kladného napětí na anodu.
+   * CA SSD - Společné napájení anody jednotlivé prvky jsou ovládány přivedením  země na katody.
    * 
    | **Digit** | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **DP** |
    | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
