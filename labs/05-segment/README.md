@@ -29,7 +29,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 ```c
 ISR(TIMER1_OVF_vect)
 { 
-	if (j == 5 && i ==59)
+	if (j == 5 && i ==9)
 	{
 		i = 0;
 		j = 0;
