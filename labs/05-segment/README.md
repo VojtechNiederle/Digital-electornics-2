@@ -27,15 +27,24 @@ Link to your `Digital-electronics-2` GitHub repository:
 2. Code listing with syntax highlighting of two interrupt service routines (`TIMER0_OVF_vect`, `TIMER0_OVF_vect`) from counter application with at least two digits, ie. values from 00 to 59:
 
 ```c
-/**********************************************************************
- * Function: Timer/Counter1 overflow interrupt
- * Purpose:  Increment counter value from 00 to 59.
- **********************************************************************/
 ISR(TIMER1_OVF_vect)
-{
-    // WRITE YOUR CODE HERE
-
+{ 
+	if (j == 5 && i ==59)
+	{
+		i = 0;
+		j = 0;
+	}
+    else if (i<9)
+    {
+        i++;
+    }
+    else
+    {    
+     i = 0;
+	 j++;   
+    }
 }
+
 ```
 
 ```c
@@ -43,11 +52,19 @@ ISR(TIMER1_OVF_vect)
  * Function: Timer/Counter0 overflow interrupt
  * Purpose:  Display tens and units of a counter at SSD.
  **********************************************************************/
+
 ISR(TIMER0_OVF_vect)
 {
-    static uint8_t pos = 0;
-
-    // WRITE YOUR CODE HERE
+	if (k == 0)
+	{
+	SEG_update_shift_regs(i,0);
+	k++;
+	}
+	else
+	{
+	SEG_update_shift_regs(j,1);
+	k = 0;
+	}
 
 }
 ```
