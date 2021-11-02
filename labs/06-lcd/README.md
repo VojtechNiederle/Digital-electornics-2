@@ -18,7 +18,7 @@ Link to this file in your GitHub repository:
 ### LCD display module
 
 1. In your words, describe what ASCII table is.
-   * ASCII table:
+   * ASCII table: It is a code name for letters and characters. 
 
 2. (Hand-drawn) picture of time signals between ATmega328P and LCD keypad shield (HD44780 driver) when transmitting three character data `De2`.
 
