@@ -91,48 +91,7 @@ ISR(ADC_vect)
     char lcd_string[4] = "0000";
     
     value = ADC;
-    
-/*    
-    if (value <= 900)
-        {
-            if (value <= 700)
-            {
-                if (value <= 500)
-                {
-                    if (value <= 300)
-                    {
-                        if (value < 150)
-                        {                        
-                            if (value < 50)
-                            {
-                                lcd_gotoxy(8, 1);
-                                lcd_puts("RG");
-                            else:
-                                lcd_gotoxy(8, 1);
-                                lcd_puts("NO");
-                            }
-                        else:
-                            lcd_gotoxy(8, 1);
-                            lcd_puts("UP");                           
-                        }
-                    else:
-                        lcd_gotoxy(8, 1);
-                        lcd_puts("DW");                        
-                    }
-                else:
-                    lcd_gotoxy(8,1);
-                    lcd_puts("LF")
-                }
-            else:
-                lcd_gotoxy(8,1);
-                lcd_puts("SL")    
-            }
-        else:
-            lcd_gotoxy(8,1)
-            lcd_puts("NO")
-        }
-*/        
-    
+  
     
     
     lcd_gotoxy(8, 0);    
