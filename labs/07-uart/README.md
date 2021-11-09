@@ -1,4 +1,4 @@
-# Lab 7: Vojtěch Niedrele
+# Lab 7: Vojtěch Niederle
 
 Link to this file in your GitHub repository:
 
