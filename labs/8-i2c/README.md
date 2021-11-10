@@ -1,8 +1,8 @@
-# Lab 8: Gregor Karetka
+# Lab 8: Vojtěch Niederle
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/gkaretka/Digital-electronics-2](https://github.com/gkaretka/Digital-electronics-2)
+   [https://github.com/VojtechNiederle/Digital-electronics-2](https://github.com/VojtechNiederle/Digital-electronics-2)
 
 # Lab 8: I2C/TWI serial communication
 
